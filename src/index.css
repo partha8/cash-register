@@ -6,6 +6,49 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --bg-color: #f6f6f6;
+  --light-shade: #d6e4f0;
+  --medium-shade: #1e56a0;
+  --dark-shade: #163172;
+}
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  align-items: center;
+}
+.heroImg {
+  width: 500px;
+}
+
+.interaction-area {
+  background-color: var(--dark-shade);
+  min-height: 200px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px 20px var(--light-shade);
+  text-transform: capitalize;
+  text-align: center;
+}
+.interaction-area h2,
+p {
+  color: var(--bg-color);
+  margin-top: 0.5rem;
+}
+
+.change-amount-container{
+  display: flex;
+  color: var(--bg-color);
+  margin: 1rem;
+  gap: 6rem;
 }
