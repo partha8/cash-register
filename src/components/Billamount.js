@@ -8,6 +8,7 @@ function Billamount() {
       <input
         type="number"
         value={billAmount}
+        placeholder='Enter Bill Amount'
         onChange={(e) => setBillAmount(e.target.value)}
       />
       <button onClick={()=> setIsCashWindowOpen(true) }>submit</button>

@@ -33,6 +33,7 @@ function Cashgiven() {
           <input
             type="number"
             value={cashAmount}
+            placeholder='Enter cash amount'
             onChange={(e) => setCashAmount(e.target.value)}
           />
           <button onClick={submitHandler}>submit</button>

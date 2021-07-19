@@ -6,8 +6,8 @@ const AppProvider = ({ children }) => {
   const [isCashWindowOpen, setIsCashWindowOpen] = useState(false);
   const [isChangeWindowOpen, setIsChangeWindowOpen] = useState(false);
 
-  const [billAmount, setBillAmount] = useState(0);
-  const [cashAmount, setCashAmount] = useState(0);
+  const [billAmount, setBillAmount] = useState();
+  const [cashAmount, setCashAmount] = useState();
   const [alertText, setAlertText] = useState("");
   const [alert, setAlert] = useState(false);
 
