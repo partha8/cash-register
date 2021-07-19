@@ -11,7 +11,7 @@ function App() {
         <img className="heroImg" src={heroImage} alt="heroImage" />
       </header>
       <section className="interaction-area">
-        <h2>Cash register manager</h2>
+        <h1>Cash register manager</h1>
         <p>
           Enter the bill amount and cash given by the customer and know minimum
           number of notes to return.

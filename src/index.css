@@ -20,7 +20,7 @@ main {
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 1rem;
   align-items: center;
 }
 .heroImg {
@@ -35,12 +35,11 @@ main {
   align-items: center;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 20px 40px 20px var(--light-shade);
   text-transform: capitalize;
   text-align: center;
 }
 .interaction-area h2,
-p {
+p,h1 {
   color: var(--bg-color);
   margin-top: 0.5rem;
 }

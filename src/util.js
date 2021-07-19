@@ -1,4 +1,3 @@
-
 import { notes } from "./notes";
 
 function getChange(cashAmount, billAmount) {
