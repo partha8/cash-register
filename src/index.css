@@ -24,12 +24,11 @@ main {
   align-items: center;
 }
 .heroImg {
-  width: 500px;
+  width: 50vw;
 }
 
 .interaction-area {
   background-color: var(--dark-shade);
-  min-height: 200px;
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -46,9 +45,47 @@ p {
   margin-top: 0.5rem;
 }
 
+.cash-amount-container , .bill-amount-container{
+  margin-top: 10px ;
+  width: 100%;
+}
+
+input{
+  height: 20px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+button {
+  margin-left: 10px ;
+  border-radius: 6px;
+  padding: 4px;
+  background-color: var(--light-shade);
+  font-size: 1rem;
+
+}
 .change-amount-container{
   display: flex;
   color: var(--bg-color);
   margin: 1rem;
-  gap: 6rem;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: var(--medium-shade);
+  padding: 10px;
+
+}
+
+.note-container,.numberOfNotes-container{
+  text-align: justify;
+  font-size: 1rem;
+}
+.itemText{
+  margin: 6px;
+}
+@media screen and (max-width: 800px)  {
+  main{
+    flex-direction: column;
+  }
 }

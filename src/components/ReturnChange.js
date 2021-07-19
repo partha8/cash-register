@@ -15,13 +15,19 @@ function ReturnChange() {
       {isChangeWindowOpen && (
         <section className="change-amount-container">
           <div className="note-container">
+            <h3>Notes</h3>
             {notes.map((item) => {
-              return <div key={item}>{item.note}</div>;
+              return (
+                <div className="itemText" key={item}>
+                  {item.note}
+                </div>
+              );
             })}
           </div>
           <div className="numberOfNotes-container">
+            <h3>No. of Notes</h3>
             {notes.map((item) => {
-              return <div> {item.numberOfNotes} </div>;
+              return <div className="itemText"> {item.numberOfNotes} </div>;
             })}
           </div>
         </section>

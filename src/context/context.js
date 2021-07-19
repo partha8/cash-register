@@ -8,13 +8,12 @@ const AppProvider = ({ children }) => {
 
   const [billAmount, setBillAmount] = useState(0);
   const [cashAmount, setCashAmount] = useState(0);
-  const [alertText , setAlertText] = useState('');
-  const [alert,setAlert] = useState(false);
+  const [alertText, setAlertText] = useState("");
+  const [alert, setAlert] = useState(false);
 
   return (
     <AppContext.Provider
       value={{
-        
         isCashWindowOpen,
         isChangeWindowOpen,
         billAmount,
@@ -26,7 +25,7 @@ const AppProvider = ({ children }) => {
         setBillAmount,
         setCashAmount,
         setAlert,
-        setAlertText
+        setAlertText,
       }}
     >
       {children}
