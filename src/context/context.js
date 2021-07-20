@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import { denominations } from "../notes";
 
 const AppContext = React.createContext();
 

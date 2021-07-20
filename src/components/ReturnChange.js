@@ -19,7 +19,7 @@ function ReturnChange() {
             <h3>Notes</h3>
             {denominations.map((item) => {
               return (
-                <div className="itemText" key={item}>
+                <div className="itemText">
                   {item.note}
                 </div>
               );
