@@ -37,34 +37,41 @@ main {
   border-radius: 10px;
   text-transform: capitalize;
   text-align: center;
+  transition: all 0.3s linear;
 }
 .interaction-area h2,
-p,h1 {
+p,
+h1 {
   color: var(--bg-color);
   margin-top: 0.5rem;
 }
 
-.cash-amount-container , .bill-amount-container{
-  margin-top: 10px ;
+.cash-amount-container,
+.bill-amount-container {
+  margin-top: 10px;
   width: 100%;
+  transition: all 0.3s linear;
 }
 
-input{
+input {
   height: 20px;
   width: 50%;
   padding: 10px;
   border-radius: 6px;
   font-size: 1rem;
+  outline: none;
+  border: none;
 }
 button {
-  margin-left: 10px ;
+  margin-left: 10px;
   border-radius: 6px;
   padding: 4px;
   background-color: var(--light-shade);
   font-size: 1rem;
-
+  outline: none;
+  border: none;
 }
-.change-amount-container{
+.change-amount-container {
   display: flex;
   color: var(--bg-color);
   margin: 1rem;
@@ -73,20 +80,21 @@ button {
   width: 100%;
   background-color: var(--medium-shade);
   padding: 10px;
-
+  transition: all 0.3s linear;
 }
-.alert{
+.alert {
   color: var(--bg-color);
 }
-.note-container,.numberOfNotes-container{
+.note-container,
+.numberOfNotes-container {
   text-align: justify;
   font-size: 1rem;
 }
-.itemText{
+.itemText {
   margin: 6px;
 }
-@media screen and (max-width: 800px)  {
-  main{
+@media screen and (max-width: 800px) {
+  main {
     flex-direction: column;
   }
 }
