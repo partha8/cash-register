@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { denominations } from "../notes";
 
 const AppContext = React.createContext();
 
@@ -11,6 +12,8 @@ const AppProvider = ({ children }) => {
   const [alertText, setAlertText] = useState("");
   const [alert, setAlert] = useState(false);
 
+  const [numberOfNotes,setNumberOfNotes] = useState([]);
+
   return (
     <AppContext.Provider
       value={{
@@ -20,12 +23,14 @@ const AppProvider = ({ children }) => {
         cashAmount,
         alertText,
         alert,
+        numberOfNotes,
         setIsCashWindowOpen,
         setIsChangeWindowOpen,
         setBillAmount,
         setCashAmount,
         setAlert,
         setAlertText,
+        setNumberOfNotes,
       }}
     >
       {children}

@@ -75,7 +75,9 @@ button {
   padding: 10px;
 
 }
-
+.alert{
+  color: var(--bg-color);
+}
 .note-container,.numberOfNotes-container{
   text-align: justify;
   font-size: 1rem;

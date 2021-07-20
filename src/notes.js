@@ -1,4 +1,4 @@
-const notes = [
+const denominations = [
   {
     note: 2000,
     numberOfNotes: 0,
@@ -28,4 +28,4 @@ const notes = [
     numberOfNotes: 0,
   },
 ];
-export {notes}
+export {denominations}

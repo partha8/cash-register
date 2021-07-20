@@ -11,18 +11,24 @@ function Cashgiven() {
     billAmount,
     setAlertText,
     setAlert,
+    setNumberOfNotes,
   } = useGlobalState();
-  const submitHandler = () => {
-    if (cashAmount < billAmount) {
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (parseInt(cashAmount) < parseInt(billAmount)) {
       setAlert(true);
-      setAlertText("CashAmount Too Low!");
+      setAlertText("Cash Amount Too Low!");
       setIsChangeWindowOpen(true);
     } else if (cashAmount === billAmount) {
       setAlert(true);
       setAlertText("No change required");
       setIsChangeWindowOpen(true);
     } else {
-      getChange(cashAmount, billAmount);
+      getChange(
+        parseInt(cashAmount),
+        parseInt(billAmount),
+        setNumberOfNotes
+      );
       setIsChangeWindowOpen(true);
     }
   };
@@ -33,10 +39,10 @@ function Cashgiven() {
           <input
             type="number"
             value={cashAmount}
-            placeholder='Enter cash amount'
+            placeholder="Enter cash amount"
             onChange={(e) => setCashAmount(e.target.value)}
           />
-          <button onClick={submitHandler}>submit</button>
+          <button onClick={(e) => submitHandler(e)}>submit</button>
         </section>
       )}
     </>

@@ -1,8 +1,9 @@
 import React from "react";
 import { useGlobalState } from "../context/context";
-import { notes } from "../notes";
+import { denominations } from "../notes";
 function ReturnChange() {
-  const { isChangeWindowOpen, alert, alertText } = useGlobalState();
+  const { isChangeWindowOpen, alert, alertText, numberOfNotes } =
+    useGlobalState();
   if (alert) {
     return (
       <>
@@ -16,7 +17,7 @@ function ReturnChange() {
         <section className="change-amount-container">
           <div className="note-container">
             <h3>Notes</h3>
-            {notes.map((item) => {
+            {denominations.map((item) => {
               return (
                 <div className="itemText" key={item}>
                   {item.note}
@@ -26,8 +27,8 @@ function ReturnChange() {
           </div>
           <div className="numberOfNotes-container">
             <h3>No. of Notes</h3>
-            {notes.map((item) => {
-              return <div className="itemText"> {item.numberOfNotes} </div>;
+            {numberOfNotes.map((item) => {
+              return <div className="itemText"> {item} </div>;
             })}
           </div>
         </section>
